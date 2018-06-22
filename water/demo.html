@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+    <script>
+        //获取画布
+        var beisizer = document.getElementById("Theback");
+        var ContenofBeisizer = beisizer.getContext("2d");
+
+        //设置波浪海域（海浪宽度，高度）
+        var beisizerwidth = beisizer.width;
+        var beisizerheight = beisizer.height;
+        var beisizerlinewidth = 2;
+
+        //曲线
+        var sinX = 0;
+        var sinY = beisizerheight/2.0;
+        //轴长
+        var axisLenght = beisizerwidth;
+        //弧度宽度
+        var waveWidth = 0.014;
+        //海浪高度
+        var waveHeight = beisizerheight / 15.0;
+        ContenofBeisizer.lineWidth = beisizerlinewidth;
+        var drawSin = function (xofspeed) {
+            ContenofBeisizer.save();
+            //存放贝塞尔曲线的各个点
+            var points = [];
+            ContenofBeisizer.beginPath();
+            //创建贝塞尔点
+            for (var x = sinX;x < sinX +axisLenght;x+=80/axisLenght){
+                var y = -Math.sin((sinX+x)*waveWidth);
+                // var y = -Math.sin((sinX+x)*waveWidth+xofspeed);
+
+                points.push([x,sinY + y * waveHeight]);
+                // points.push([x,rand+y*waveHeight]);
+
+                ContenofBeisizer.lineTo(x,sinY + y * waveHeight);
+                // ContenofBeisizer.lineTo(x,rand + y * waveHeight);
+            }
+
+            ContenofBeisizer.lineTo(axisLenght,beisizerheight);
+            ContenofBeisizer.lineTo(sinX,beisizerheight);
+            ContenofBeisizer.lineTo(points[0][0],points[0][1]);
+            ContenofBeisizer.stroke();
+            ContenofBeisizer.restore();
+
+            //贝塞尔曲线样式设置
+            ContenofBeisizer.strokeStyle = "#3bc777";
+            ContenofBeisizer.fillStyle = "#3bc777";
+            ContenofBeisizer.fill();
+        };
+        var rendY = function () {
+            ContenofBeisizer.clearRect(0,0,beisizerwidth,beisizerheight);
+
+            //控制海浪高度
+            var tmp = 0.1;
+            rand-=tmp;
+            var b = beisizerheight - rand;
+
+            //控制循环涨潮
+            if (parseInt(b)==beisizerheight){
+                rand = beisizerheight;
+            }
+
+            drawSin(xofspeed);
+            drawSinl(xofspeed);
+            xofspeed += speed;
+            requestAnimationFrame(rendY);
+        };
+        // function Beisizer() {
+        //     drawSin();
+        // }
+    </script>
+</head>
+<body>
+<button type="button"
+        onclick="Beisizer()"
+
+        id="Anniu">确  定
+</button>
+<canvas id="Theback"></canvas>
+</body>
+</html>
