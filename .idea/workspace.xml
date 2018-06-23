@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="680ebbc4-abc5-45ea-9f8e-17dd67c70d58" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Broadcast/css/shutter.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Broadcast/images/a1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Broadcast/images/a2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Broadcast/images/a3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Broadcast/images/a4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Broadcast/images/shutter_nextBtn.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Broadcast/images/shutter_prevBtn.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Broadcast/images/shutter_shadow.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Broadcast/indexs.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Broadcast/js/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Broadcast/js/shutter.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Broadcast/js/velocity.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/water/demo - 快捷方式.lnk" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/handlock/handlock.js" afterPath="$PROJECT_DIR$/handlock/handlock.js" />
+      <change beforePath="$PROJECT_DIR$/Broadcast/indexs.html" afterPath="$PROJECT_DIR$/Broadcast/indexs.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,14 +40,24 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/handlock/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
+            <state relative-caret-position="-216">
               <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="handlock.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="indexs.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Broadcast/indexs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="handlock.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/handlock/handlock.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
@@ -93,6 +90,7 @@
         <option value="$PROJECT_DIR$/water/demo.html" />
         <option value="$PROJECT_DIR$/test.txt" />
         <option value="$PROJECT_DIR$/handlock/handlock.js" />
+        <option value="$PROJECT_DIR$/Broadcast/indexs.html" />
       </list>
     </option>
   </component>
@@ -103,8 +101,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="81" />
-    <option name="y" value="6" />
+    <option name="x" value="3" />
+    <option name="y" value="28" />
     <option name="width" value="1946" />
     <option name="height" value="1058" />
   </component>
@@ -130,6 +128,11 @@
             <path>
               <item name="demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="Broadcast" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="demo" type="b2602c69:ProjectViewProjectNode" />
@@ -180,7 +183,7 @@
       <workItem from="1529630535057" duration="2727000" />
       <workItem from="1529653674390" duration="11000" />
       <workItem from="1529671571942" duration="1584000" />
-      <workItem from="1529739987410" duration="10000" />
+      <workItem from="1529739987410" duration="276000" />
     </task>
     <task id="LOCAL-00001" summary="贝塞尔曲线     手势密码">
       <created>1529632711710</created>
@@ -189,14 +192,21 @@
       <option name="project" value="LOCAL" />
       <updated>1529632711710</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="轮播图">
+      <created>1529740020308</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1529740020308</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7106000" />
+    <option name="totallyTimeSpent" value="7372000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="81" y="6" width="1946" height="1058" extended-state="0" />
+    <frame x="3" y="28" width="1946" height="1058" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -226,7 +236,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="贝塞尔曲线     手势密码" />
-    <option name="LAST_COMMIT_MESSAGE" value="贝塞尔曲线     手势密码" />
+    <MESSAGE value="轮播图" />
+    <option name="LAST_COMMIT_MESSAGE" value="轮播图" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -353,18 +364,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/handlock/handlock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="61" column="8" lean-forward="false" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/handlock/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
+        <state relative-caret-position="-216">
           <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handlock/handlock.js">
+    <entry file="file://$PROJECT_DIR$/Broadcast/indexs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="61" column="8" lean-forward="false" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
+        <state relative-caret-position="216">
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding />
         </state>
       </provider>
