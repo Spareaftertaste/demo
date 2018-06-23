@@ -12,9 +12,9 @@
       message: option.message,
       setPass: option.setPass,
       checkPass: option.checkPass
-    }
+    };
     this.reDraw = false; //表示是否需要重绘
-  }
+  };
   handLock.prototype = {
     init: function(){ // 函数入口
       this.createCanvas();
@@ -56,7 +56,7 @@
             x: j * 4 * r + 3 * r,
             y: i * 4 * r + 3 * r,
             id: i * 3 + j
-          }
+          };
           this.circles.push(p);
           this.restCircles.push(p);
         }
