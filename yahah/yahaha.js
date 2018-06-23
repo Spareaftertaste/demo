@@ -3,7 +3,7 @@ var miniRefresh = new MiniRefresh({
     down: {
         callback: function() {
             // 下拉事件
-
+            location.reload();
             miniRefresh.endDownLoading();
         }
     },
