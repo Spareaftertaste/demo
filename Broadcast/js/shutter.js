@@ -4,8 +4,17 @@
  * Mail: 1005526074@qq.com
  * 效果原作者: https://oss.so/article/71
  */
- 
-;(function ($, window, document, undefined) {
+$(function () {
+    $('.shutter').shutter({
+        shutterW: 1000, // 容器宽度
+        shutterH: 358, // 容器高度
+        isAutoPlay: true, // 是否自动播放
+        playInterval: 3000, // 自动播放时间
+        curDisplay: 3, // 当前显示页
+        fullPage: false // 是否全屏展示
+    });
+});
+(function ($, window, document, undefined) {
 
   var Shutter = function (elem, options) {
     this.defaults = {
