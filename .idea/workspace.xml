@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="680ebbc4-abc5-45ea-9f8e-17dd67c70d58" name="Default" comment="">
+    <list default="true" id="680ebbc4-abc5-45ea-9f8e-17dd67c70d58" name="Default" comment="下拉刷新">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/canvas/canvas.html" afterPath="$PROJECT_DIR$/canvas/canvas.html" />
       <change beforePath="$PROJECT_DIR$/canvas/canvas.js" afterPath="$PROJECT_DIR$/canvas/canvas.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -119,7 +118,7 @@
         <entry file="file://$PROJECT_DIR$/canvas/canvas.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="364">
-              <caret line="29" column="168" lean-forward="false" selection-start-line="29" selection-start-column="168" selection-end-line="29" selection-end-column="168" />
+              <caret line="29" column="133" lean-forward="false" selection-start-line="29" selection-start-column="133" selection-end-line="29" selection-end-column="133" />
               <folding />
             </state>
           </provider>
@@ -281,7 +280,7 @@
       <workItem from="1529653674390" duration="11000" />
       <workItem from="1529671571942" duration="1584000" />
       <workItem from="1529739987410" duration="5601000" />
-      <workItem from="1529804281827" duration="3272000" />
+      <workItem from="1529804281827" duration="5754000" />
     </task>
     <task id="LOCAL-00001" summary="贝塞尔曲线     手势密码">
       <created>1529632711710</created>
@@ -353,11 +352,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529807869171</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="下拉刷新">
+      <created>1529808852386</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1529808852386</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15969000" />
+    <option name="totallyTimeSpent" value="18451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-14" y="65" width="1946" height="1058" extended-state="0" />
@@ -780,7 +786,7 @@
     <entry file="file://$PROJECT_DIR$/canvas/canvas.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
-          <caret line="29" column="168" lean-forward="false" selection-start-line="29" selection-start-column="168" selection-end-line="29" selection-end-column="168" />
+          <caret line="29" column="133" lean-forward="false" selection-start-line="29" selection-start-column="133" selection-end-line="29" selection-end-column="133" />
           <folding />
         </state>
       </provider>
