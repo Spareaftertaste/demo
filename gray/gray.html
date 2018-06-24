@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <style>
+        #div{
+            display: none;
+            position: absolute;
+            top: 0;left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(235,235,236,0.8);
+        }
+        .bottom{
+            position: absolute;bottom: 0;left: 0;right: 0;
+            text-align: center;
+        }
+        .bottom button{
+            display: block;
+            width: 100%;
+            border: #333333 solid 2px;
+        }
+        .blank{
+            position: absolute;
+            top: 0;left: 0;right: 0;
+            background-color: #dca854;
+        }
+    </style>
+</head>
+<body>
+<button onclick="change()">点击弹出</button>
+<div id="div" onclick="yahaha()">
+    <div class="blank"></div>
+    <div class="bottom">
+        <button onclick="emmm()">yahaha</button>
+        <button onclick="emmm()">emmmm</button>
+    </div>
+</div>
+<script>
+    function change() {
+        var div = document.getElementById("div");
+        div.style.display = "block";
+    }
+    function yahaha() {
+        var div = document.getElementById("div");
+        div.style.display = "none";
+    }
+    function emmm() {
+        alert("2333333");
+        event.stopPropagation();//阻止事件冒泡即可
+    }
+</script>
+</body>
+</html>
