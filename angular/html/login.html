@@ -1,11 +1,11 @@
 <form name="myForm" class="login">
     <div>
-        <input type="text" required ng-model="name" placeholder="快点输入名字！" name="yahaha"  ng-pattern="/^[\u4e00-\u9fa5]{2,4}$/">
+        <input type="text" required ng-model="vm.name" placeholder="快点输入名字！" name="yahaha"  ng-pattern="/^[\u4e00-\u9fa5]{2,4}$/">
         <span style="color:red" ng-show="myForm.yahaha.$dirty && myForm.yahaha.$invalid">2-4个汉字！</span>
     </div>
     <div>
-        <input type="text" name="phone" placeholder="手机号码！赶紧！"  ng-model="phone" ng-pattern="/(^$)|^(((\+86)|(86))?1[34578]\d{9})$/">
+        <input type="text" name="phone" placeholder="手机号码！赶紧！"  ng-model="vm.phone" ng-pattern="/(^$)|^(((\+86)|(86))?1[34578]\d{9})$/">
         <span style="color:red" ng-show="myForm.phone.$dirty && myForm.phone.$invalid">联系电话格式不正确！</span>
     </div>
-    <button class="btn" ng-click ="go()">？？？</button>
+    <button class="btn" ng-click ="vm.go()">？？？</button>
 </form>
