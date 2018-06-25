@@ -1,5 +1,5 @@
 
-var app = angular.module("demo",["ngAnimate","ui.router","ui.bootstrap"]);
+var app = angular.module("demo",["ngAnimate","ui.router"]);
 app.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/login");
     $stateProvider
