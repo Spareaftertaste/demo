@@ -1,10 +1,10 @@
-app.controller("loginCtrl",function ($scope,$http,$state) {
+app.controller("loginCtrl",function ($http,$state) {
     var vm = this;
     vm.go = function () {
         $state.go('main')
     };
 });
-app.controller("mainCtrl",function ($scope,$timeout) {
+app.controller("mainCtrl",function ($timeout,$state) {
     var vm = this;
 
     vm.loding = true;
@@ -15,5 +15,11 @@ app.controller("mainCtrl",function ($scope,$timeout) {
     // setTimeout($scope.loding = false,3000);
     $timeout(function () {
         vm.loding = false
-    },1000)
+    },1000);
+    vm.go = function () {
+        $state.go('main.content')
+    }
+});
+app.controller("contentCtrl",function () {
+
 });

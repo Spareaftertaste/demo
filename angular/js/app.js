@@ -8,11 +8,19 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'html/login.html',
             controller: 'loginCtrl',
             controllerAs:'vm'
+
         })
         .state('main',{
             url:"/main",
             templateUrl: 'html/main.html',
             controller: 'mainCtrl',
+            controllerAs:'vm'
+
+        })
+        .state('main.content',{
+            url:"/content",
+            templateUrl:'html/content.html',
+            controller:'contentCtrl',
             controllerAs:'vm'
         })
 });

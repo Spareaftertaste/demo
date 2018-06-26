@@ -1,0 +1,32 @@
+
+.main{
+  .loding{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(119,119,119);
+
+  }
+  .center{
+    position: absolute;top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30vw;
+    height: 40vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: .1rem;
+    img{
+      width: .6rem;
+      height: .6rem;
+      margin-bottom: .2rem;
+    }
+  }
+  .box{
+    border: #0f0f0f solid 5px;
+    background-color: #2aabd2;
+  }
+}
