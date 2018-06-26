@@ -1,0 +1,9 @@
+.login {
+  margin: .3rem; }
+  .login input {
+    border: pink solid 2px;
+    margin: .1rem 0; }
+  .login .box {
+    background-color: orange; }
+
+/*# sourceMappingURL=login.css.map */

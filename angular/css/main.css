@@ -1,0 +1,28 @@
+.main .loding {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #777777; }
+.main .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  height: 40vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: .1rem; }
+  .main .center img {
+    width: .6rem;
+    height: .6rem;
+    margin-bottom: .2rem; }
+.main .box {
+  border: #0f0f0f solid 5px;
+  background-color: #2aabd2; }
+
+/*# sourceMappingURL=main.css.map */
