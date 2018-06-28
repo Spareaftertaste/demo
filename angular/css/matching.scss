@@ -12,6 +12,7 @@
 
   .recommend{
     display: flex;
+    flex-wrap: wrap;
     div{
       margin: .1rem;
       padding: 0 .05rem;

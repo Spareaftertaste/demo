@@ -9,7 +9,8 @@
     background-color: #999;
     color: red; }
   .matching .recommend {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     .matching .recommend div {
       margin: .1rem;
       padding: 0 .05rem;
