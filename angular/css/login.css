@@ -5,5 +5,39 @@
     margin: .1rem 0; }
   .login .box {
     background-color: orange; }
+  .login .contract {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(119, 119, 119, 0.5);
+    padding: .2rem; }
+    .login .contract .contract-content {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #f9f9f9;
+      border-radius: .1rem;
+      padding: .1rem;
+      height: 80vh;
+      width: 80vw;
+      overflow-y: auto; }
+      .login .contract .contract-content h1 {
+        text-align: center; }
+      .login .contract .contract-content div {
+        margin-top: .1rem; }
+      .login .contract .contract-content .back-btn {
+        position: absolute;
+        left: .1rem;
+        top: .1rem;
+        font-size: medium;
+        font-weight: bolder;
+        border: pink 2px solid;
+        width: .2rem;
+        height: .2rem;
+        text-align: center;
+        line-height: .2rem; }
 
 /*# sourceMappingURL=login.css.map */

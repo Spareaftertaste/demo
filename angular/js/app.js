@@ -10,6 +10,13 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             controllerAs:'vm'
 
         })
+        .state('matching',{
+            url:"/matching",
+            templateUrl: 'html/matching.html',
+            controller: 'matchingCtrl',
+            controllerAs:'vm'
+
+        })
         .state('main',{
             url:"/main",
             templateUrl: 'html/main.html',
