@@ -77,7 +77,7 @@ app.controller("buyCtrl",function () {
 
     vm.mine = "0.00";
     vm.change = function () {
-        vm.mine = !vm.money? 0.00: vm.money*0.0013;
+        vm.mine = !vm.money? "0.00": vm.money*0.0013;
         console.log(vm.mine);
     };//计算收益
 

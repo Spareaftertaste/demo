@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="680ebbc4-abc5-45ea-9f8e-17dd67c70d58" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/angular/css/backStage.scss" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/angular/html/backStage.html" afterPath="$PROJECT_DIR$/angular/html/backStage.html" />
-      <change beforePath="$PROJECT_DIR$/angular/index.html" afterPath="$PROJECT_DIR$/angular/index.html" />
+      <change beforePath="$PROJECT_DIR$/angular/html/buy.html" afterPath="$PROJECT_DIR$/angular/html/buy.html" />
       <change beforePath="$PROJECT_DIR$/angular/js/ctrl.js" afterPath="$PROJECT_DIR$/angular/js/ctrl.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -83,8 +81,8 @@
       <file leaf-file-name="ctrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular/js/ctrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="172" column="6" lean-forward="true" selection-start-line="172" selection-start-column="6" selection-end-line="172" selection-end-column="6" />
+            <state relative-caret-position="-840">
+              <caret line="79" column="34" lean-forward="false" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -100,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buy.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="buy.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angular/html/buy.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="57" column="39" lean-forward="false" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+            <state relative-caret-position="216">
+              <caret line="29" column="56" lean-forward="false" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#form#0;n#div#0;n#!!top" expanded="true" />
@@ -115,10 +113,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="backStage.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="backStage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular/html/backStage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
+            <state relative-caret-position="489">
               <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
               <folding />
             </state>
@@ -171,11 +169,11 @@
         <option value="$PROJECT_DIR$/angular/js/app.js" />
         <option value="$PROJECT_DIR$/angular/html/login.html" />
         <option value="$PROJECT_DIR$/angular/css/buy.scss" />
-        <option value="$PROJECT_DIR$/angular/html/buy.html" />
         <option value="$PROJECT_DIR$/angular/index.html" />
         <option value="$PROJECT_DIR$/angular/css/backStage.scss" />
-        <option value="$PROJECT_DIR$/angular/js/ctrl.js" />
         <option value="$PROJECT_DIR$/angular/html/backStage.html" />
+        <option value="$PROJECT_DIR$/angular/js/ctrl.js" />
+        <option value="$PROJECT_DIR$/angular/html/buy.html" />
       </list>
     </option>
   </component>
@@ -186,8 +184,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="409" />
-    <option name="y" value="154" />
+    <option name="x" value="83" />
+    <option name="y" value="184" />
     <option name="width" value="1579" />
     <option name="height" value="697" />
   </component>
@@ -315,7 +313,7 @@
       <workItem from="1530150587962" duration="5487000" />
       <workItem from="1530166380194" duration="7126000" />
       <workItem from="1530234918555" duration="6880000" />
-      <workItem from="1530252082011" duration="9530000" />
+      <workItem from="1530252082011" duration="10100000" />
     </task>
     <task id="LOCAL-00001" summary="贝塞尔曲线     手势密码">
       <created>1529632711710</created>
@@ -513,17 +511,23 @@
       <option name="project" value="LOCAL" />
       <updated>1530259731154</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="demo写完了一个">
+      <created>1530261923057</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1530261923057</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86811000" />
+    <option name="totallyTimeSpent" value="87381000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="409" y="154" width="1579" height="697" extended-state="0" />
-    <editor active="true" />
+    <frame x="83" y="184" width="1579" height="697" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24950755" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24950755" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -852,19 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular/html/buy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="57" column="39" lean-forward="false" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#span#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular/html/content.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -921,19 +912,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular/js/ctrl.js">
+    <entry file="file://$PROJECT_DIR$/angular/html/backStage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="172" column="6" lean-forward="true" selection-start-line="172" selection-start-column="6" selection-end-line="172" selection-end-column="6" />
+        <state relative-caret-position="489">
+          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular/html/backStage.html">
+    <entry file="file://$PROJECT_DIR$/angular/js/ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        <state relative-caret-position="-840">
+          <caret line="79" column="34" lean-forward="false" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/html/buy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="29" column="56" lean-forward="false" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
