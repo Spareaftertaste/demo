@@ -17,6 +17,20 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             controllerAs:'vm'
 
         })
+        .state('buy',{
+            url:"/buy",
+            templateUrl: 'html/buy.html',
+            controller: 'buyCtrl',
+            controllerAs:'vm'
+
+        })
+        .state('backStage',{
+            url:"/backStage",
+            templateUrl: 'html/backStage.html',
+            controller: 'backStageCtrl',
+            controllerAs:'vm'
+
+        })
         .state('main',{
             url:"/main",
             templateUrl: 'html/main.html',

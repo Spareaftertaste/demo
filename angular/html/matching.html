@@ -10,7 +10,7 @@
         <div ng-click = "vm.allOpen()" >查看全部</div>
     </div>
     <div>匹配债权</div>
-    <div class="all" ng-show = "vm.all" ng-click ="vm.close()">
+    <div class="all" ng-show = "vm.all" >
         <div class="all-content" ng-click = "vm.stop()">
             <div class="title">所有投资</div>
 
@@ -20,6 +20,7 @@
                     <span>投资金额： {{x.money}}</span>
                 </div>
             </div>
+            <button class="btn btn-default" ng-click ="vm.close()">确定</button>
         </div>
 
     </div>

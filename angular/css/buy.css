@@ -1,0 +1,81 @@
+.buy div {
+  border-bottom: #0f0f0f 1px solid;
+  padding: 0.1rem; }
+.buy .title {
+  height: .4rem;
+  display: flex;
+  text-align: center;
+  padding: 0; }
+  .buy .title span {
+    margin-left: .1rem;
+    margin-right: .2rem;
+    line-height: .4rem; }
+.buy .content {
+  padding: .1rem;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  border-bottom: #0f0f0f 1px solid; }
+  .buy .content span input {
+    padding: 0 .1rem;
+    margin-bottom: .2rem;
+    margin-top: .05rem;
+    width: 100%; }
+  .buy .content span .attention {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+.buy button {
+  width: 100%;
+  background-color: #f0ad4e;
+  color: #f9f9f9;
+  font-weight: bolder;
+  font-size: .2rem; }
+.buy .contract {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 0 0.2rem;
+  overflow-y: auto; }
+  .buy .contract h1 {
+    text-align: center;
+    margin: 0;
+    padding: .2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: .8rem;
+    background-color: #f0f0f0; }
+  .buy .contract div {
+    margin-top: .6rem; }
+    .buy .contract div div {
+      margin-top: .1rem;
+      border: none; }
+  .buy .contract .back-btn {
+    position: fixed;
+    margin: 0;
+    left: .2rem;
+    top: .2rem;
+    font-size: medium;
+    font-weight: bolder;
+    border: pink 2px solid;
+    width: .4rem;
+    height: .4rem;
+    text-align: center;
+    line-height: .2rem;
+    z-index: 10; }
+.buy .bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(235, 235, 236, 0.8);
+  display: flex;
+  flex-direction: column-reverse; }
+
+/*# sourceMappingURL=buy.css.map */

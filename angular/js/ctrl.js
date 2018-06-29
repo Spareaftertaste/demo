@@ -61,18 +61,41 @@ app.controller("matchingCtrl",function (data) {
     };
 });
 
-// (function () {
-//     var Mock = require('mockjs');
-//     var data = Mock.mock({
-//         // 属性 list 的值是一个数组，其中含有 1 到 10 个元素
-//         'list|1-10': [{
-//             // 属性 id 是一个自增数，起始值为 1，每次增 1
-//             'id|+1': 1
-//         }]
-//     });
-//     // 输出结果
-//     console.log(JSON.stringify(data, null, 4));
-// })();
+app.controller("buyCtrl",function () {
+    var vm = this;
+
+    vm.contract = false;//合同默认消失
+    vm.showContract = function () {
+        vm.contract = true;
+    };//点击合同出现
+    vm.close = function () {
+        vm.contract = false;
+        vm.bottom = false;
+    };//点击合同,银行卡选择消失
+
+
+
+    vm.mine = "0.00";
+    vm.change = function () {
+        vm.mine = !vm.money? 0.00: vm.money*0.0013;
+        console.log(vm.mine);
+    };//计算收益
+
+    vm.bottom = false;
+    vm.showBottom = function () {
+        vm.bottom = true;
+    };//点击下方出现银行卡选择按钮
+    vm.stop = function (e) {
+        // event.stopPropagation();//阻止事件冒泡
+        vm.card = e;
+
+    };
+});
+
+app.controller("backStageCtrl",function () {
+    var vm = this;
+});
+
 
 app.constant('data',[
     {
@@ -108,3 +131,4 @@ app.constant('data',[
         money:'22222000.00元'
     }
 ]);
+

@@ -1,0 +1,60 @@
+<div class="buy">
+    <div class="title">
+        <span ui-sref = "login" style="font-size: .3rem"><</span><span>立即购买</span>
+    </div>
+    <form class="content" name="myForm2" >
+        <span>购买金额：</span>
+        <span style="position: relative">
+            <input type="text" name="money" id=""
+                   placeholder="5000起投，最小增减金额为1000"
+                   ng-model ="vm.money"
+                   ng-pattern="/^(?:[5-9]\d00|[1-9]\d{2,}00)$/"
+                   ng-blur = "vm.change()"
+            >
+            <span class="attention" style="color: red"  ng-show="myForm2.money.$dirty && myForm2.$invalid">购买金额不符合要求，请重试</span>
+        </span>
+        <span>
+            预期收益：<span >{{vm.mine}}</span>元
+        </span>
+
+    </form>
+    <div ng-click = "vm.showBottom()">
+        支付方式：<img src="img/233.png"><span>{{vm.card}}</span>
+    </div>
+    <div>
+        <span class=".glyphicon .glyphicon-stop"></span>
+        购买这个产品就默认您已阅读并同意
+        <div style="color: #dca854;border: none;padding: 0" ng-click = "vm.showContract()">《聚金融投资合同》</div>
+    </div>
+    <button class="btn btn-default">确认购买</button>
+    <div class="contract" ng-show = "vm.contract">
+        <div class="back-btn" ng-click ="vm.close()"><</div>
+            <h1>条款</h1>
+            <div>
+                <div>第一，绝对不意气用事</div>
+                <div>第二，绝对不漏判任何一件坏事</div>
+                <div>第三，绝对裁判的公正漂亮，裁判机器人蜻蜓队长前来觐见！</div>
+                <div>这场和平星争夺战由我来做裁判!</div>
+                <div>第一，绝对不意气用事</div>
+                <div>第二，绝对不漏判任何一件坏事</div>
+                <div>第三，绝对裁判的公正漂亮，裁判机器人蜻蜓队长前来觐见！</div>
+                <div>这场和平星争夺战由我来做裁判!</div>
+                <div>第一，绝对不意气用事</div>
+                <div>第二，绝对不漏判任何一件坏事</div>
+                <div>第三，绝对裁判的公正漂亮，裁判机器人蜻蜓队长前来觐见！</div>
+                <div>这场和平星争夺战由我来做裁判!</div>
+                <div>第一，绝对不意气用事</div>
+                <div>第二，绝对不漏判任何一件坏事</div>
+                <div>第三，绝对裁判的公正漂亮，裁判机器人蜻蜓队长前来觐见！</div>
+                <div>这场和平星争夺战由我来做裁判!</div>
+                <div>第一，绝对不意气用事</div>
+                <div>第二，绝对不漏判任何一件坏事</div>
+                <div>第三，绝对裁判的公正漂亮，裁判机器人蜻蜓队长前来觐见！</div>
+                <div>这场和平星争夺战由我来做裁判!</div>
+            </div>
+    </div>
+    <div class="bottom" ng-show ="vm.bottom"  ng-click ="vm.close()">
+        <button ng-click = "vm.stop('招行')">招行</button>
+        <button ng-click = "vm.stop('建行')">建行</button>
+    </div>
+</div>

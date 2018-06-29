@@ -11,7 +11,10 @@
     <div class="box">2333</div>
     <div ng-click = "vm.showContract()" style="margin: .2rem 0 ">查看相关合同条约</div>
     <div ui-sref = "matching">走，我们去看债权匹配页面</div>
-    <div class="contract" ng-show = "vm.contract" ng-click ="vm.close()">
+
+    <button ui-sref = "buy" class="btn-success btn" style="margin: .2rem 0 ">前往购买页面</button>
+    <button ui-sref = "backStage" class="btn-default btn">前往后台侧边栏页面</button>
+    <div class="contract" ng-show = "vm.contract">
         <div class="contract-content" ng-click ="vm.stop()">
             <div class="back-btn" ng-click ="vm.close()"><</div>
             <h1>条款</h1>
