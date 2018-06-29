@@ -92,8 +92,29 @@ app.controller("buyCtrl",function () {
     };
 });
 
-app.controller("backStageCtrl",function () {
+app.controller("backStageCtrl",function (sideBar,$state) {
     var vm = this;
+
+    vm.sideBar = sideBar;
+
+    vm.titleIndex = function (e) {
+        vm.sideBarTitleIndex = (vm.sideBarTitleIndex === e)? undefined : e;
+    };
+    //一级菜单
+    vm.content = function (e,index) {
+        vm.sideBarContent = e;
+        sessionStorage.setItem("title",index);
+        sessionStorage.setItem("content",e);
+    };
+    //二级菜单
+    vm.sideBarContent = sessionStorage.getItem("content");
+    vm.sideBarTitleIndex = sessionStorage.getItem("title");
+    //刷新也保持高亮
+
+    vm.clean = function () {
+        sessionStorage.clear();
+        $state.reload('backStage');
+    }
 });
 
 
@@ -132,3 +153,31 @@ app.constant('data',[
     }
 ]);
 
+app.constant('sideBar',[
+    {
+        sideBarTitle : '业务管理',
+        sideBarContent : [
+            {sideBarName : '用户管理', url:'.company' },
+            {sideBarName : '产品管理', url:'.company' },
+            {sideBarName : '债权管理', url:'.job' }
+        ]
+    },
+    {
+        sideBarTitle : '运营管理',
+        sideBarContent : [
+            {sideBarName : 'banner图', url:'.articleList' },
+            {sideBarName : '鼎力推荐', url:'.articleList' },
+            {sideBarName : '消息管理', url:'.articleList' },
+            {sideBarName : '意见反馈', url:'.articleList' },
+        ]
+    },
+    {
+        sideBarTitle : '后台管理',
+        sideBarContent : [
+            {sideBarName : '账号管理', url:'.articleList' },
+            {sideBarName : '密码管理', url:'.articleList' },
+            {sideBarName : '模块管理', url:'.articleList' },
+            {sideBarName : '角色管理', url:'.articleList' },
+        ]
+    },
+]);

@@ -1,0 +1,26 @@
+<div class="backStage row">
+    <div class="col-xs-4">
+        <div ng-repeat="x in vm.sideBar">
+            <div  class="side-nav-menu" ng-click="vm.titleIndex($index)" >
+                <span class="glyphicon glyphicon-list"></span>
+                <span>{{x.sideBarTitle}}</span>
+                <span ng-class="{true:'glyphicon glyphicon-arrow-down',false : 'glyphicon glyphicon-arrow-left'}[vm.sideBarTitleIndex == $index]"></span>
+            </div>
+            <div ng-repeat="y in x.sideBarContent"
+                 ng-show="vm.sideBarTitleIndex == $parent.$index"
+                 ng-click="vm.content(y.sideBarName,$parent.$index)">
+                <a  ui-sref = ""
+                    ng-class="{true:'active',false:''}[y.sideBarName == vm.sideBarContent]"
+                    class="nav-list">
+                    <span>{{y.sideBarName}}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-8">
+        <button ng-click ="vm.clean()">清除缓存</button>
+        <div>
+            <button ui-sref="login">返回首页</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+.backStage{
+
+}
+.side-nav-title{
+  padding-left: .2rem;
+  margin: 0;
+  height: .7rem;
+  line-height: .7rem;
+  width: 100%;
+  color: #29b078;
+  font-weight: 10;
+  font-size: .3rem;
+  //background-color: #ffa600;
+  //border-bottom: #29bde0 solid;
+}
+.side-nav-menu{
+  display: flex;
+  justify-content: space-between;
+  color: #29b078;
+  background-color: orange;
+  font-weight: bolder;
+  span{
+    padding: .15rem;
+  }
+}
+.side-nav-menu:hover{
+  background-color: rgba(131,114,114,0.5);
+}
+.nav-list{
+  height: .4rem;
+  line-height: .4rem;
+  text-align: center;
+  //background-color: greenyellow;
+  display: block;
+  color: #0f0f0f;
+}
+.nav-list:hover{
+  background-color: rgba(131,114,114,0.5);
+  text-decoration: none;
+  color: pink;
+}
+//.nav-list:active{
+//  text-decoration: none;
+//  color: pink;
+//}
+.active{
+  background-color: rgba(131,114,114,0.5);
+  text-decoration: none!important;
+  color: pink !important;
+}
