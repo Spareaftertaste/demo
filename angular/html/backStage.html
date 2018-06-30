@@ -3,24 +3,27 @@
         <div ng-repeat="x in vm.sideBar">
             <div  class="side-nav-menu" ng-click="vm.titleIndex($index)" >
                 <span class="glyphicon glyphicon-list"></span>
-                <span>{{x.sideBarTitle}}</span>
+                <span>{{x.fatherName}}</span>
                 <span ng-class="{true:'glyphicon glyphicon-arrow-down',false : 'glyphicon glyphicon-arrow-left'}[vm.sideBarTitleIndex == $index]"></span>
             </div>
-            <div ng-repeat="y in x.sideBarContent"
+            <div ng-repeat="y in x.sonModuleList"
                  ng-show="vm.sideBarTitleIndex == $parent.$index"
-                 ng-click="vm.content(y.sideBarName,$parent.$index)">
+                 ng-click="vm.content(y.moduleName,$parent.$index)">
                 <a  ui-sref = ""
-                    ng-class="{true:'active',false:''}[y.sideBarName == vm.sideBarContent]"
+                    ng-class="{true:'active',false:''}[y.moduleName == vm.sideBarContent]"
                     class="nav-list">
-                    <span>{{y.sideBarName}}</span>
+                    <span>{{y.moduleName}}</span>
                 </a>
             </div>
         </div>
     </div>
     <div class="col-xs-8">
-        <button ng-click ="vm.clean()">清除缓存</button>
+        <button ng-click ="vm.clean()" class="btn btn-success" style="margin: .2rem 0">底层屁民模式！启动！（删除缓存，去掉管理员权限）</button>
         <div>
-            <button ui-sref="login">返回首页</button>
+            <button ui-sref="login" class="btn btn-success" style="margin: .2rem 0">返回首页</button>
+        </div>
+        <div>
+            <button ng-click = "vm.admin('admin')" class="btn btn-danger" style="margin: .2rem 0">管理员模式！启动！</button>
         </div>
     </div>
 </div>

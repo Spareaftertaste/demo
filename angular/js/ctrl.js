@@ -127,10 +127,30 @@ app.controller("freshCtrl",function(){
     });
 });
 
-app.controller("backStageCtrl",function (sideBar,$state) {
+app.controller("backStageCtrl",function ($http,sideBar,$state) {
     var vm = this;
+    vm.user = sessionStorage.getItem("user") || "233";
+    $http({
+        method: 'get',
+        url: '/Femo/json/'+vm.user,
+        headers:{'Content-Type': 'application/x-www-form-urlencoded'}
 
-    vm.sideBar = sideBar;
+    }).then(function successCallback(response) {
+        //请求成功的代码
+        console.log(response.data);
+        vm.sideBar = response.data.fatherModuleList;
+        console.log(vm.sideBar);
+
+    }, function errorCallback(response) {
+        // 请求失败执行代码
+        alert("error");
+    });
+
+    vm.admin = function (e) {
+      sessionStorage.setItem("user",e);
+      $state.reload('backStage');
+    };
+    // vm.sideBar = sideBar;
 
     vm.titleIndex = function (e) {
         vm.sideBarTitleIndex = (vm.sideBarTitleIndex === e)? undefined : e;
