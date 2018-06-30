@@ -37,27 +37,41 @@ app.controller("contentCtrl",function () {
 app.controller("matchingCtrl",function (data) {
     var vm = this;
     vm.data = data;
+    vm.dataThree = [vm.data[0],vm.data[1],vm.data[2]];//将数组前三位单独遍历展示出来
 
     vm.detail = false;
 
-    vm.over = function (data) {
+    vm.over = function (data) {//鼠标划入
         vm.detail = true;
         vm.data2 = data;
     };
-    vm.leave = function () {
+    vm.leave = function () {//鼠标划出
         vm.detail = false;
         vm.data2 = {};
     };
 
-    vm.all = false;
+    vm.all = false;//查看所有默认隐藏，点击事件才会让其显示，如下
     vm.allOpen = function () {
         vm.all = true;
     };
     vm.close = function () {
         vm.all = false;
     };
-    vm.stop = function () {
-        event.stopPropagation();//阻止事件冒泡
+
+    vm.selected = [];//所有被选取的投资数组
+    vm.select = function (e) {//将选取的投资加入数组
+        if(vm.selected.indexOf(e) >= 0){//当投资已经被选过时不进行操作
+            console.log(vm.selected.indexOf(e));
+            console.log(vm.selected);
+            return false;
+        }
+        vm.selected.push(e);
+        console.log(vm.selected);
+    };
+
+    vm.remove = function (e) {//移除投资
+        console.log(e);
+        vm.selected.splice(e, 1);
     };
 });
 
@@ -88,8 +102,29 @@ app.controller("buyCtrl",function () {
     vm.stop = function (e) {
         // event.stopPropagation();//阻止事件冒泡
         vm.card = e;
-
     };
+});
+
+app.controller("freshCtrl",function(){
+    var miniRefresh = new MiniRefresh({
+        container: '#minirefresh',
+        down: {
+            callback: function() {
+                // 下拉事件
+                location.reload();
+                miniRefresh.endDownLoading();
+            }
+        },
+        up: {
+            isAuto: true,
+            callback: function() {
+                // 上拉事件
+
+                // 注意，由于默认情况是开启满屏自动加载的，所以请求失败时，请务必endUpLoading(true)，防止无限请求
+                miniRefresh.endUpLoading(true);
+            }
+        }
+    });
 });
 
 app.controller("backStageCtrl",function (sideBar,$state) {

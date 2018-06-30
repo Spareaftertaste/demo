@@ -31,6 +31,13 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             controllerAs:'vm'
 
         })
+        .state('fresh',{
+            url:"/fresh",
+            templateUrl: 'html/fresh.html',
+            controller: 'freshCtrl',
+            controllerAs:'vm'
+
+        })
         .state('main',{
             url:"/main",
             templateUrl: 'html/main.html',

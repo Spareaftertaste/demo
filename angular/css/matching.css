@@ -18,6 +18,20 @@
       border-radius: .1rem; }
     .matching .recommend div:hover {
       background-color: #2aabd2; }
+  .matching .select {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+    width: 5rem;
+    padding: .2rem; }
+    .matching .select div {
+      flex-basis: 30%;
+      margin: .1rem 0; }
+      .matching .select div span {
+        border: #0f0f0f 1px solid;
+        padding: .05rem;
+        border-radius: .1rem;
+        background-color: #2aabd2; }
   .matching .all {
     position: absolute;
     width: 100vw;
@@ -54,5 +68,11 @@
           padding-left: .1rem; }
         .matching .all .all-content .content div:hover {
           background-color: #2aabd2; }
+      .matching .all .all-content .yahaha {
+        display: flex;
+        justify-content: center; }
+
+.active-1 {
+  background-color: #2aabd2; }
 
 /*# sourceMappingURL=matching.css.map */

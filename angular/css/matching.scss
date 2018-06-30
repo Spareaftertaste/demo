@@ -24,6 +24,24 @@
     }
 
   }
+  
+  .select{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+    width: 5rem;
+    padding: .2rem;
+    div{
+      flex-basis: 30%;
+      margin: .1rem 0;
+      span{
+        border: #0f0f0f 1px solid;
+        padding:  .05rem;
+        border-radius: .1rem;
+        background-color: #2aabd2;
+      }
+    }
+  }
 
   .all{
     position: absolute;
@@ -62,6 +80,16 @@
           background-color: #2aabd2;
         }
       }
+
+      .yahaha{
+        display: flex;
+        justify-content: center;
+        button{
+        }
+      }
     }
   }
+}
+.active-1{
+  background-color: #2aabd2;
 }
