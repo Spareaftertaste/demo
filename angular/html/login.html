@@ -4,7 +4,7 @@
         <span style="color:red" ng-show="myForm.yahaha.$dirty && myForm.yahaha.$invalid">2-4个汉字！</span>
     </div>
     <div>
-        <input type="text" name="phone" placeholder="手机号码！赶紧！"  ng-model="vm.phone" ng-pattern="/^(((\+86)|(86))?1[0-9]{10})$/">
+        <input type="tel" name="phone" placeholder="手机号码！赶紧！"  ng-model="vm.phone" ng-pattern="/^(((\+86)|(86))?1[0-9]{10})$/">
         <span style="color:red" ng-show="myForm.phone.$dirty && myForm.phone.$invalid">联系电话格式不正确！</span>
     </div>
     <button class="btn" ng-click ="vm.go()">？？？</button>
